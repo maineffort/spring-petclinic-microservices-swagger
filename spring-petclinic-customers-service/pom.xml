@@ -15,6 +15,23 @@
 	</parent>
 
 	<dependencies>
+	        <!-- Swagger -->
+	
+	<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-model</artifactId>
+			<version>3.3.9</version>
+		</dependency>
         <!-- Petclinic -->
         <dependency>
             <groupId>org.springframework.samples.petclinic.monitoring</groupId>
