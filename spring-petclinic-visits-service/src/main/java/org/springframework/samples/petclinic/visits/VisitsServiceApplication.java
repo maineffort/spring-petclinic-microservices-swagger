@@ -58,7 +58,7 @@ public class VisitsServiceApplication {
         Model model = reader.read(new FileReader("pom.xml"));
         return new Docket(DocumentationType.SWAGGER_2)  
           .select() 
-          .apis(RequestHandlerSelectors.basePackage(""))
+          .apis(RequestHandlerSelectors.basePackage("org.springframework.samples.petclinic.visits.web"))
           .paths(PathSelectors.any())                          
           .build().apiInfo(new ApiInfo("Visits Service Api Documentation", "Documentation automatically generated", model.getParent().getVersion(), null, new Contact("Kennedy Torkura", "kennedy.wordpress.com", "run2obtain@gmail.com"), null, null));                                           
     }

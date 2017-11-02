@@ -4,6 +4,8 @@ spring:
       uri: http://localhost:8888
   application:
     name: api-gateway
+  
+    #port: 8083
 ---
 spring:
   profiles: docker
