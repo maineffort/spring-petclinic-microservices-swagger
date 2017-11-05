@@ -29,7 +29,7 @@ services:
      - discovery-server
     entrypoint: ["./wait-for-it.sh","discovery-server:8761","--timeout=60","--","java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
     ports:
-    - 8081:8081
+    - 8091:8091
 
   visits-service:
     image: mszarlinski/spring-petclinic-visits-service
@@ -43,7 +43,7 @@ services:
      - discovery-server
     entrypoint: ["./wait-for-it.sh","discovery-server:8761","--timeout=60","--","java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
     ports:
-     - 8082:8082
+     - 8092:8092
 
   vets-service:
     image: mszarlinski/spring-petclinic-vets-service
@@ -57,7 +57,7 @@ services:
      - discovery-server
     entrypoint: ["./wait-for-it.sh","discovery-server:8761","--timeout=60","--","java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
     ports:
-     - 8083:8083
+     - 8093:8093
 
   api-gateway:
     image: mszarlinski/spring-petclinic-api-gateway
