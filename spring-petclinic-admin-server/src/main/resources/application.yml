@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/zaproxy
+    username: root
+    password: test
+    platform: mysql
+    initialize: false
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+ 
+server:
+  port: 8772
+#  context-path: v2
+  
+
+#eureka:
+  #client:
+    #registerWithEureka: false
+    #fetchRegistry: false
+  #server:
+    #waitTimeInMsWhenSyncEmpty: 0
+    
+#springfox.documentation.swagger.v2.path=/swagger.json
+    
+    # prefix for all requests
+#server.contextPath=/v2
+
+# location of the swagger json

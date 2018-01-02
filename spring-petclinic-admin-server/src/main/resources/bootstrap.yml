@@ -1,12 +1,13 @@
 spring:
-  cloud:
-    config:
-      uri: http://localhost:8888
-  application:
-    name: admin-server
----
-spring:
-  profiles: docker
-  cloud:
-    config:
-      uri: http://localhost:8888
+   cloud:
+     config:
+       uri: http://localhost:8888
+   application:
+    name: security-admin-server
+  
+#---
+#spring:
+ # profiles: docker
+  # cloud:
+   # config:
+    #  uri: http://localhost:8888

@@ -25,6 +25,8 @@ import org.springframework.context.annotation.Configuration;
 @EnableAutoConfiguration
 @EnableAdminServer
 @EnableDiscoveryClient
+//@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+
 public class SpringBootAdminApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootAdminApplication.class, args);
