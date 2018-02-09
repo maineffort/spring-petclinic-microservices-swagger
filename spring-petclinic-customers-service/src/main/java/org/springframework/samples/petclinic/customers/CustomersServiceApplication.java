@@ -27,6 +27,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.sleuth.sampler.AlwaysSampler;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.samples.petclinic.monitoring.MonitoringConfig;
 //import org.xmlpull.v1.XmlPullParserException;
@@ -45,7 +46,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableDiscoveryClient
 @SpringBootApplication
 @EnableSwagger2
-
+@Configuration
 @Import(MonitoringConfig.class)
 public class CustomersServiceApplication {
 

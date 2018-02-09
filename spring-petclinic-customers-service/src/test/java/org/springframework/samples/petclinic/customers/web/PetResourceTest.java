@@ -27,6 +27,7 @@ import org.springframework.test.web.servlet.MockMvc;
 @RunWith(SpringRunner.class)
 @WebMvcTest(PetResource.class)
 @ActiveProfiles("test")
+
 public class PetResourceTest {
 
     @Autowired
