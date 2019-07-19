@@ -3,7 +3,7 @@ node {
     withMaven(maven:'maven') {
 
         stage('Checkout') {
-            git url: 'https://github.com/SyCode7/spring-petclinic-microservices-swagger.git', credentialsId: 'SyCode7-@secure&sons7', branch: 'master'
+            git url: 'https://github.com/SyCode7/spring-petclinic-microservices-swagger.git', credentialsId: 'maineffort-@secure&sons7', branch: 'master'
         }
 
         stage('Build') {
